@@ -5,14 +5,7 @@ import toast from 'react-hot-toast'
 import usetoDoStore from '../app/toDoStore'
 
 const List = () => {
-	const { toDos, addtoDo, removetoDo, toggletoDoStatus } = usetoDoStore(
-		(state) => ({
-			toDos: state.toDos,
-			addtoDo: state.addtoDo,
-			removetoDo: state.removetoDo,
-			toggletoDoStatus: state.toggletoDoStatus,
-		})
-	)
+	const { toDos, addtoDo, removetoDo, toggletoDoStatus } = usetoDoStore()
 
 	return (
 		<>
